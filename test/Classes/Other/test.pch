@@ -1,0 +1,55 @@
+//
+//  test.pch
+//  test
+//
+//  Created by 邵梦 on 2020/3/24.
+//  Copyright © 2020 ZGH. All rights reserved.
+//
+
+#ifndef test_pch
+#define test_pch
+
+/*
+     pch步骤 ： 提前编译pch  /Users/shaomeng/Downloads/test/test/Classes/Other/test.pch 在setting 里搜 “prefix”  改变路径 填写test/Classes/Other/test.pch
+ 
+     作用 ：存放公用宏
+           存放公用头文件
+           自定义Log
+ */
+//#define GZX  20
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+Item.h"
+#import "UIImage+Extension.h"
+#import "NSString+Extension.h"
+#import "GSConst.h"
+
+#define GSColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1] GSColor
+#define GSRandomColor  GSColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+
+
+
+/*******屏幕适配*****/
+#define GSScreenW   [UIScreen mainScreen].bounds.size.width
+#define GSScreenH   [UIScreen mainScreen].bounds.size.height
+#define iphone6P   (GSScreenH == 736)
+#define iphone6   (GSScreenH == 667)
+#define iphone5   (GSScreenH == 568)
+#define iphone4   (GSScreenH == 480)
+
+
+
+#define  GSFunc  GSLog(@"%s",__func__)
+
+
+//#define DEBUG
+#ifdef DEBUG  //调试
+
+#define GSLog(...) NSLog(__VA_ARGS__)
+
+#else         //发布
+
+#define GSLog(...)
+
+#endif
+
+#endif /* test_pch */
