@@ -43,7 +43,7 @@
 
 //#define DEBUG
 #ifdef DEBUG  //调试
-
+//添加Foundation+Log.m   打印中文
 #define GSLog(...) NSLog(__VA_ARGS__)
 
 #else         //发布
