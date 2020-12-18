@@ -10,25 +10,59 @@
 #import "UIView+Frame.h"
 
 @interface GSTabBar()
-@property (nonatomic, weak) UIButton *plusBtn;
 @end
 
 @implementation GSTabBar
-- (UIButton *)plusBtn{
-    if(!_plusBtn){
-//        _plusBtn = [[UIButton alloc] init];
-        UIButton *plusBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [plusBtn setBackgroundImage:[UIImage imageNamed:@"icon_ibar_ndex_noclick"] forState:UIControlStateNormal];
+- (UIButton *)centerBtn{
+    if(!_centerBtn){
+//        _centerBtn = [[UIButton alloc] init];
+        UIButton *centerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [centerBtn setBackgroundImage:[UIImage imageNamed:@"icon_ibar_ndex_noclick"] forState:UIControlStateNormal];
+//
+//        [centerBtn setBackgroundImage:[UIImage imageNamed:@"icon_ibar_ndex_click"] forState:UIControlStateHighlighted];
         
-        [plusBtn setBackgroundImage:[UIImage imageNamed:@"icon_ibar_ndex_click"] forState:UIControlStateHighlighted];
+        centerBtn.backgroundColor = [UIColor orangeColor];
+        centerBtn.layer.masksToBounds = YES;
+        centerBtn.layer.cornerRadius = 25;
         
-        [plusBtn sizeToFit];
-        _plusBtn = plusBtn;
-        [self addSubview:plusBtn];
+        [centerBtn sizeToFit];
+        _centerBtn = centerBtn;
+        [self addSubview:centerBtn];
         
     }
-    return _plusBtn;
+    return _centerBtn;
 }
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    
+    UIView *view = [super hitTest:point withEvent:event];
+    if(view == nil){
+        
+        CGPoint tempPoint = [self.centerBtn convertPoint:point fromView:self];
+        if(CGRectContainsPoint(self.centerBtn.bounds, tempPoint)){
+            
+            return self.centerBtn;
+        }
+    }
+    
+    return  view;
+}
+//-(UIView*)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+//    UIView*view = [super hitTest:point withEvent:event];
+//    if(view== nil){
+//        //转换坐标
+//        CGPoint tempPoint = [self.centerBtn convertPoint:point fromView:self];
+//
+//        //判断点击的点是否在按钮区域内
+//
+//        if(CGRectContainsPoint(self.centerBtn.bounds, tempPoint)){
+//        //返回按钮
+//            return_centerBtn;
+//        }
+//    }
+//
+//    returnview;
+//
+//}
 - (void)layoutSubviews{
     
     [super layoutSubviews];
@@ -36,7 +70,7 @@
     
     NSInteger count = self.items.count + 1;
     CGFloat btnW = self.gs_width/count;//self.bounds.size.width / count;
-    CGFloat btnH = self.gs_height;
+    CGFloat btnH = GSTabBarH;//self.gs_height;
 
     NSLog(@"%@",self.subviews);
     
@@ -55,8 +89,13 @@
             i++;
         }
     }
-    self.plusBtn.center = CGPointMake(self.gs_width*0.5, self.gs_height*0.5);
-    
+//    self.centerBtn.center = CGPointMake(self.gs_width*0.5, self.gs_height*0.5);
+//    self.centerBtn.center = CGPointMake(self.gs_width*0.5, GSTabBarH*0.5);
+    self.centerBtn.gs_size = CGSizeMake(50,50);
+    self.centerBtn.gs_y = - btnH/2;
+    self.centerBtn.gs_centerX = self.gs_width*0.5;
+
+
 }
 
 @end

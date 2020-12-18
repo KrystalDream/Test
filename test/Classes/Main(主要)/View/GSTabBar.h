@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GSTabBar : UITabBar
+@property (nonatomic, weak) UIButton *centerBtn;
 
 @end
 
