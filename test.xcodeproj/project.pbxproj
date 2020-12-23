@@ -57,6 +57,8 @@
 		B23BD405256E31BF007CABA5 /* UIView+STFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3F9256E31BF007CABA5 /* UIView+STFrame.m */; };
 		B23BD406256E31BF007CABA5 /* STPickerViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3FA256E31BF007CABA5 /* STPickerViewConst.m */; };
 		B23BD407256E31BF007CABA5 /* STPickerViewUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3FB256E31BF007CABA5 /* STPickerViewUI.m */; };
+		B24810FC259322C200737570 /* GSADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24810FB259322C200737570 /* GSADViewController.m */; };
+		B24811012593263500737570 /* GSADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24811002593263500737570 /* GSADViewController.xib */; };
 		B2E952C6256F7D1F00420B95 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E952C5256F7D1F00420B95 /* PrivacyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +177,9 @@
 		B23BD3FC256E31BF007CABA5 /* UIView+STFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STFrame.h"; sourceTree = "<group>"; };
 		B23BD3FD256E31BF007CABA5 /* STPickerViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerViewConst.h; sourceTree = "<group>"; };
 		B23BD3FE256E31BF007CABA5 /* STPickerViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPickerViewConfig.h; sourceTree = "<group>"; };
+		B24810FA259322C200737570 /* GSADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSADViewController.h; sourceTree = "<group>"; };
+		B24810FB259322C200737570 /* GSADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSADViewController.m; sourceTree = "<group>"; };
+		B24811002593263500737570 /* GSADViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSADViewController.xib; sourceTree = "<group>"; };
 		B2E952C4256F7D1F00420B95 /* PrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
 		B2E952C5256F7D1F00420B95 /* PrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -321,6 +326,9 @@
 		4E5A85D1242C9EFE00E37C0D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B24810FA259322C200737570 /* GSADViewController.h */,
+				B24810FB259322C200737570 /* GSADViewController.m */,
+				B24811002593263500737570 /* GSADViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -814,6 +822,7 @@
 				4E757359243C596400F34013 /* GSSubTagCell.xib in Resources */,
 				188561FD2421C60200CED3A0 /* Assets.xcassets in Resources */,
 				188561FB2421C60100CED3A0 /* Main.storyboard in Resources */,
+				B24811012593263500737570 /* GSADViewController.xib in Resources */,
 				B23BD402256E31BF007CABA5 /* area.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -913,6 +922,7 @@
 				4EA77BAD24665D0A00DA9370 /* ForthViewController.m in Sources */,
 				4ED9CF6F24230FF800E3ECC2 /* FriendTrendViewController.m in Sources */,
 				B23BD406256E31BF007CABA5 /* STPickerViewConst.m in Sources */,
+				B24810FC259322C200737570 /* GSADViewController.m in Sources */,
 				4EFC549A242B3B8E00860C63 /* GSSettingViewController.m in Sources */,
 				B23BD403256E31BF007CABA5 /* STPickerArea.m in Sources */,
 				4E679E2524FBEC86005D29AD /* NSString+Extension.m in Sources */,

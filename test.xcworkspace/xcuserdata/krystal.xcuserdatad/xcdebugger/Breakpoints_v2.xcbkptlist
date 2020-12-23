@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8F139A17-1CE4-4F4C-B460-C410C1999409"
+            uuid = "55130A9E-8520-4E5B-84E4-479350E67119"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "test/Classes/Other/AppDelegate.m"
+            filePath = "test/Classes/Main(&#x4e3b;&#x8981;)/Controller/GSTabbarController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "-touchesBegan:withEvent:"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-centerBtnClick"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
