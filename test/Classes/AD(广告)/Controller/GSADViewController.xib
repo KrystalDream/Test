@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSADViewController">
             <connections>
+                <outlet property="adContainView" destination="JGo-F0-pBB" id="IDU-hV-GH0"/>
+                <outlet property="launchImageView" destination="wso-H5-RAv" id="c4T-8Q-bcd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Du5-fk-8Jh"/>
             </connections>
         </placeholder>
@@ -20,16 +21,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wso-H5-RAv">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-F0-pBB" userLabel="广告占位视图">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u36-7x-0hF">
+                    <rect key="frame" x="308" y="50" width="86" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.657652948943662" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="跳过（3秒）"/>
+                </button>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
             <constraints>
-                <constraint firstItem="wso-H5-RAv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="LqG-9k-iF7"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wso-H5-RAv" secondAttribute="bottom" id="Rk4-XG-jNU"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wso-H5-RAv" secondAttribute="trailing" id="SxZ-ZF-Lta"/>
-                <constraint firstItem="wso-H5-RAv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="w6D-eN-Upy"/>
+                <constraint firstAttribute="bottom" secondItem="JGo-F0-pBB" secondAttribute="bottom" id="Amh-id-7J9"/>
+                <constraint firstItem="wso-H5-RAv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LqG-9k-iF7"/>
+                <constraint firstItem="JGo-F0-pBB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P9z-Bc-x0l"/>
+                <constraint firstAttribute="bottom" secondItem="wso-H5-RAv" secondAttribute="bottom" id="Rk4-XG-jNU"/>
+                <constraint firstAttribute="trailing" secondItem="wso-H5-RAv" secondAttribute="trailing" id="SxZ-ZF-Lta"/>
+                <constraint firstItem="JGo-F0-pBB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ufm-J0-F2r"/>
+                <constraint firstAttribute="trailing" secondItem="JGo-F0-pBB" secondAttribute="trailing" id="gwj-7R-cXT"/>
+                <constraint firstAttribute="trailing" secondItem="u36-7x-0hF" secondAttribute="trailing" constant="20" id="mpW-YN-28q"/>
+                <constraint firstItem="u36-7x-0hF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="rX4-OM-rhE"/>
+                <constraint firstItem="wso-H5-RAv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="w6D-eN-Upy"/>
             </constraints>
             <point key="canvasLocation" x="139" y="61"/>
         </view>

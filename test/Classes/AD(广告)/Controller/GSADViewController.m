@@ -9,6 +9,8 @@
 #import "GSADViewController.h"
 
 @interface GSADViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *launchImageView;
+@property (weak, nonatomic) IBOutlet UIView *adContainView;
 
 @end
 
@@ -16,9 +18,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //设置启动图片 这里读取不到 LaunchImage  只能单独重新添加 启动图片在 assets中
+    //苹果为什么推出assets  因为之前 很多app 图片都一样  很多应用盗取别人的图片
+    [self setUpLaunchImage];
+    
+    //加载广告数据
 }
+- (void)setUpLaunchImage{
+    
+    NSString *imageNameStr;
+    if(iPhoneX){
+        imageNameStr = @"启动页-1125(1)";
 
+
+    }else if (iPhoneXs_Max){
+        imageNameStr = @"启动页-1242-(1)";
+
+    }else if(isXR){
+        imageNameStr = @"启动页-828-(1)";
+
+    }else if(IS_IPHONE_6sp){
+        imageNameStr = @"启动页-1242(2)";
+
+    }else if(IS_IPHONE_6s){
+        imageNameStr = @"启动页-750";
+
+    }
+    else if(IS_IPHONE_5s){
+        imageNameStr = @"启动页-640";
+    }
+    else{
+        
+        
+    }
+
+    self.launchImageView.image = [UIImage imageNamed:imageNameStr];
+ 
+    self.launchImageView.backgroundColor = [UIColor purpleColor];
+}
 /*
 #pragma mark - Navigation
 
