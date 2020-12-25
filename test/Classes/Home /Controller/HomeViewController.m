@@ -220,6 +220,7 @@
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     _manager = manager;
     NSMutableDictionary * parameters = [NSMutableDictionary dictionary];
+    //2、发送请求
     [manager GET:@"https://timgsa.baidu.com/timg" parameters:parameters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //解析数据 写成plist文件
 //        [responseObject writeToFile:@"" atomically:YES encoding: error:nil:YES ];
