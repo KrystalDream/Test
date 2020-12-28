@@ -8,15 +8,43 @@
 
 #import "GSADViewController.h"
 #import <AFNetworking/AFNetworking.h>
+#import "GSADModel.h"
+#import <MJExtension/MJExtension.h>
+#import <UIImageView+WebCache.h>
 
 @interface GSADViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *launchImageView;
 @property (weak, nonatomic) IBOutlet UIView *adContainView;
-
+@property (nonatomic,weak) UIImageView *adView;
 @end
 
 @implementation GSADViewController
-
+- (UIImageView *)adView{
+    if(_adView == nil){
+        UIImageView * imageView = [UIImageView new];
+        imageView.backgroundColor = [UIColor greenColor];
+        [self.adContainView addSubview:imageView]; //不然会被销毁
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(adTap)];
+        [imageView addGestureRecognizer:tap];
+        
+        imageView.userInteractionEnabled = YES;
+        
+        _adView = imageView;
+    }
+    return  _adView;
+}
+- (void)adTap{
+    //跳转界面 用safari
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com/index.htm"];
+    UIApplication *app = [UIApplication sharedApplication];
+    if([app canOpenURL:url]){
+        [app openURL:url];
+    }
+    
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //设置启动图片 这里读取不到 LaunchImage  只能单独重新添加 启动图片在 assets中
@@ -41,6 +69,24 @@
 
 }
 - (void)loadData{
+    
+    
+    
+    
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3346370926,2786132887&fm=26&gp=0.jpg"]];
+    UIImage *showimage = [UIImage imageWithData:data];
+//    CGFloat scale = showimage.size.height/showimage.size.width;
+    self.adView.image = showimage;
+//    self.scrollView.contentSize = CGSizeMake(MSWIDTH, MSWIDTH * scale);
+//    [self.adView sd_setImageWithURL:[NSURL URLWithString:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3346370926,2786132887&fm=26&gp=0.jpg"]];
+//
+    CGFloat h = GSScreenW /showimage.size.width * showimage.size.height;
+    
+    self.adView.frame = CGRectMake(0, 0, GSScreenW, h);
+    
+    
+    
+    return;
    
     /*
       xcode7.0之后 支持https  为了让项目支持http  在info 添加字段 App Transport Security Settings (字典)
@@ -61,12 +107,26 @@
     
     // 1.创建请求会话管理者
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //2、拼接参数
     NSMutableDictionary * parameters = [NSMutableDictionary dictionary];
-    //2、发送请求
+    //3、发送请求
     [manager GET:@"https://timgsa.baidu.com/timg" parameters:parameters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //解析数据 写成plist文件
 //        [responseObject writeToFile:@"" atomically:YES encoding: error:nil:YES ];
+        //请求数据
         GSLog(@"%@",responseObject);
+        //获取字典
+        
+        //字典转模型
+        
+//        GSADModel  *model = [GSADModel  mj_objectWithKeyValues:responseObject[@"data"]];
+        
+        //创建 UIImamge 展示图片
+        
+//        CGFloat h = GSScreenW/model.width * model.height;
+        self.adView.frame = CGRectMake(0, 0, GSScreenW, GSScreenH);
+        
+        [self.adView sd_setImageWithURL:[NSURL URLWithString:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3346370926,2786132887&fm=26&gp=0.jpg"]];
 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         GSLog(@"%@",error);

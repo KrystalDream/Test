@@ -48,6 +48,7 @@
 		4EF424DC24C9C5A00026DDFD /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF424DB24C9C5A00026DDFD /* CarModel.m */; };
 		4EFC5493242B338E00860C63 /* GSNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC5492242B338E00860C63 /* GSNavigationViewController.m */; };
 		4EFC549A242B3B8E00860C63 /* GSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC5499242B3B8E00860C63 /* GSSettingViewController.m */; };
+		B2129B6C259971BA0066B0F7 /* GSADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2129B6B259971BA0066B0F7 /* GSADModel.m */; };
 		B23BD3FF256E31BF007CABA5 /* STPickerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3E9256E31BF007CABA5 /* STPickerDate.m */; };
 		B23BD400256E31BF007CABA5 /* NSCalendar+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3EB256E31BF007CABA5 /* NSCalendar+ST.m */; };
 		B23BD401256E31BF007CABA5 /* STPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3EE256E31BF007CABA5 /* STPickerView.m */; };
@@ -159,6 +160,8 @@
 		4EFC5498242B3B8E00860C63 /* GSSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSSettingViewController.h; sourceTree = "<group>"; };
 		4EFC5499242B3B8E00860C63 /* GSSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSSettingViewController.m; sourceTree = "<group>"; };
 		9A9E1ED31EF128D64EC49F96 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
+		B2129B6A259971BA0066B0F7 /* GSADModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSADModel.h; sourceTree = "<group>"; };
+		B2129B6B259971BA0066B0F7 /* GSADModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSADModel.m; sourceTree = "<group>"; };
 		B23BD3E9256E31BF007CABA5 /* STPickerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPickerDate.m; sourceTree = "<group>"; };
 		B23BD3EA256E31BF007CABA5 /* NSCalendar+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+ST.h"; sourceTree = "<group>"; };
 		B23BD3EB256E31BF007CABA5 /* NSCalendar+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+ST.m"; sourceTree = "<group>"; };
@@ -336,6 +339,8 @@
 		4E5A85D2242C9EFE00E37C0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2129B6A259971BA0066B0F7 /* GSADModel.h */,
+				B2129B6B259971BA0066B0F7 /* GSADModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -916,6 +921,7 @@
 				B23BD400256E31BF007CABA5 /* NSCalendar+ST.m in Sources */,
 				4EF424D924C9C58A0026DDFD /* CarCell.m in Sources */,
 				4EFC5493242B338E00860C63 /* GSNavigationViewController.m in Sources */,
+				B2129B6C259971BA0066B0F7 /* GSADModel.m in Sources */,
 				4EBC6E1424455760005AEF17 /* GSWebViewController.m in Sources */,
 				4EA77BAA24665CF700DA9370 /* ThirdViewController.m in Sources */,
 				B23BD407256E31BF007CABA5 /* STPickerViewUI.m in Sources */,
