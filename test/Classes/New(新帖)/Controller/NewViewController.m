@@ -23,11 +23,10 @@
                                                             highImage : [UIImage
                                                            imageNamed : @"icon_bar_ss_click"]
                                                             addTarget : self
-                                                               action : @selector(game)];
+                                                               action : @selector(tagClick)];
 }
-- (void)game{
+- (void)tagClick{
     GSSubTagViewController *subTagVC = [GSSubTagViewController new];
-    
     [self.navigationController pushViewController:subTagVC animated:YES];
     
 }

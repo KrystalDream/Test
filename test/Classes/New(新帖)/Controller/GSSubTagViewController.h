@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GSSubTagViewController : UIViewController
+@interface GSSubTagViewController : UITableViewController
 
 @end
 
