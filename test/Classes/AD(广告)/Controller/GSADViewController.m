@@ -11,11 +11,14 @@
 #import "GSADModel.h"
 #import <MJExtension/MJExtension.h>
 #import <UIImageView+WebCache.h>
+#import "GSTabbarController.h"
 
 @interface GSADViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *launchImageView;
 @property (weak, nonatomic) IBOutlet UIView *adContainView;
 @property (nonatomic,weak) UIImageView *adView;
+@property (nonatomic,weak) NSTimer *timer;  //定时器都用weak，因为系统会管理
+@property (weak, nonatomic) IBOutlet UIButton *jumpBtn;
 @end
 
 @implementation GSADViewController
@@ -66,13 +69,42 @@
     //5、只能用workspace 打开
     
     [self loadData];
+    
+    //创建定时器
+    _timer = [NSTimer scheduledTimerWithTimeInterval : 1
+                                              target : self
+                                            selector : @selector(timeChange)
+                                            userInfo : nil
+                                             repeats : YES];
+    
 
 }
+//点击跳转做的事情
+- (IBAction)jumpBtnClick:(id)sender {
+    
+    //消耗广告界面，进入主框架界面
+    GSTabbarController *tabBarController = [[GSTabbarController alloc]init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = tabBarController;
+    
+    //干掉定时器（否则一直在跑跑跑，一直在耗内存）
+    [_timer invalidate];
+    
+}
+- (void)timeChange{
+    
+    GSFunc;
+    static int i = 3;
+    
+    if(i == 0){
+        [self jumpBtnClick:nil];
+    }
+    i--;
+    
+    //设置跳转按钮文字  btn样式 是系统的system 就会一闪一闪的；custom 就不会闪
+    [_jumpBtn setTitle:[NSString stringWithFormat:@"跳转（%d秒）",i] forState:UIControlStateNormal];
+    
+}
 - (void)loadData{
-    
-    
-    
-    
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3346370926,2786132887&fm=26&gp=0.jpg"]];
     UIImage *showimage = [UIImage imageWithData:data];
 //    CGFloat scale = showimage.size.height/showimage.size.width;

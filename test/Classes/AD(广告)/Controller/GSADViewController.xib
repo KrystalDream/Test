@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSADViewController">
             <connections>
                 <outlet property="adContainView" destination="JGo-F0-pBB" id="IDU-hV-GH0"/>
+                <outlet property="jumpBtn" destination="u36-7x-0hF" id="9n0-cs-93q"/>
                 <outlet property="launchImageView" destination="wso-H5-RAv" id="c4T-8Q-bcd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Du5-fk-8Jh"/>
             </connections>
@@ -27,10 +28,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u36-7x-0hF">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u36-7x-0hF">
                     <rect key="frame" x="308" y="50" width="86" height="30"/>
                     <color key="backgroundColor" white="0.0" alpha="0.657652948943662" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="跳过（3秒）"/>
+                    <connections>
+                        <action selector="jumpBtnClick:" destination="-1" eventType="touchUpInside" id="tOe-IH-fEC"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
