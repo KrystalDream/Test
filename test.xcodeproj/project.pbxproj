@@ -60,6 +60,9 @@
 		B23BD407256E31BF007CABA5 /* STPickerViewUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3FB256E31BF007CABA5 /* STPickerViewUI.m */; };
 		B24810FC259322C200737570 /* GSADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24810FB259322C200737570 /* GSADViewController.m */; };
 		B24811012593263500737570 /* GSADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24811002593263500737570 /* GSADViewController.xib */; };
+		B2C6740425A2F594004FEA32 /* FriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C6740325A2F594004FEA32 /* FriendTrendViewController.xib */; };
+		B2C6740B25A30617004FEA32 /* GSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C6740925A30617004FEA32 /* GSLoginRegisterViewController.m */; };
+		B2C6740C25A30617004FEA32 /* GSLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C6740A25A30617004FEA32 /* GSLoginRegisterViewController.xib */; };
 		B2E952C6256F7D1F00420B95 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E952C5256F7D1F00420B95 /* PrivacyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +186,10 @@
 		B24810FA259322C200737570 /* GSADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSADViewController.h; sourceTree = "<group>"; };
 		B24810FB259322C200737570 /* GSADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSADViewController.m; sourceTree = "<group>"; };
 		B24811002593263500737570 /* GSADViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSADViewController.xib; sourceTree = "<group>"; };
+		B2C6740325A2F594004FEA32 /* FriendTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTrendViewController.xib; sourceTree = "<group>"; };
+		B2C6740825A30617004FEA32 /* GSLoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLoginRegisterViewController.h; sourceTree = "<group>"; };
+		B2C6740925A30617004FEA32 /* GSLoginRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLoginRegisterViewController.m; sourceTree = "<group>"; };
+		B2C6740A25A30617004FEA32 /* GSLoginRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		B2E952C4256F7D1F00420B95 /* PrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
 		B2E952C5256F7D1F00420B95 /* PrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -485,6 +492,10 @@
 			children = (
 				4ED9CF6D24230FF800E3ECC2 /* FriendTrendViewController.h */,
 				4ED9CF6E24230FF800E3ECC2 /* FriendTrendViewController.m */,
+				B2C6740325A2F594004FEA32 /* FriendTrendViewController.xib */,
+				B2C6740825A30617004FEA32 /* GSLoginRegisterViewController.h */,
+				B2C6740925A30617004FEA32 /* GSLoginRegisterViewController.m */,
+				B2C6740A25A30617004FEA32 /* GSLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -822,8 +833,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C6740C25A30617004FEA32 /* GSLoginRegisterViewController.xib in Resources */,
 				4EF424D624C9C5510026DDFD /* car.plist in Resources */,
 				188562002421C60200CED3A0 /* LaunchScreen.storyboard in Resources */,
+				B2C6740425A2F594004FEA32 /* FriendTrendViewController.xib in Resources */,
 				4E757359243C596400F34013 /* GSSubTagCell.xib in Resources */,
 				188561FD2421C60200CED3A0 /* Assets.xcassets in Resources */,
 				188561FB2421C60100CED3A0 /* Main.storyboard in Resources */,
@@ -917,6 +930,7 @@
 				4ED615B324220C0B00BA8C34 /* main.m in Sources */,
 				4ED9CF6C24230FD700E3ECC2 /* PublishViewController.m in Sources */,
 				4E863A8B24D798570002A45E /* UIImage+Extension.m in Sources */,
+				B2C6740B25A30617004FEA32 /* GSLoginRegisterViewController.m in Sources */,
 				4ED72F2A242895B100AFEF5B /* GSTabBar.m in Sources */,
 				B23BD400256E31BF007CABA5 /* NSCalendar+ST.m in Sources */,
 				4EF424D924C9C58A0026DDFD /* CarCell.m in Sources */,

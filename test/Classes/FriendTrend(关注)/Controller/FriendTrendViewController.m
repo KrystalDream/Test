@@ -9,11 +9,12 @@
 #import "FriendTrendViewController.h"
 #import "AFNetworking.h"
 #import "NetManager.h"
-
+#import "GSLoginRegisterViewController.h"
 
 @interface FriendTrendViewController ()
 @property (nonatomic ,strong) NSString *cookieId;
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 
 @end
 
@@ -24,12 +25,19 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
-    
+//    self.view.backgroundColor = [UIColor greenColor];
+    self.title = @"我的关注";
     [self loginTest];
 
 
+    self.iconImageView.layer.cornerRadius = 50;
+    self.iconImageView.layer.masksToBounds = YES;
     
+}
+- (IBAction)loginBtnClick:(id)sender {
+    
+    GSLoginRegisterViewController *vc = [GSLoginRegisterViewController new];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
