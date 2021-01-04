@@ -10,7 +10,6 @@
 #import <AFNetworking/AFNetworking.h>
 #import "GSADModel.h"
 #import <MJExtension/MJExtension.h>
-#import <UIImageView+WebCache.h>
 #import "GSTabbarController.h"
 
 @interface GSADViewController ()

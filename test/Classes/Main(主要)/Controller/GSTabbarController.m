@@ -118,7 +118,7 @@
 
     
     UINavigationController *nav1 = self.childViewControllers[1];
-    nav1.tabBarItem.title = @"页2";
+    nav1.tabBarItem.title = @"新贴";
     nav1.tabBarItem.image = [UIImage  imageNamed:@"icon_ibar_ndex_noclick"];
     nav1.tabBarItem.badgeValue = @"7";
     //快速生成一个没有渲染的图片
@@ -132,7 +132,7 @@
 //                                         imageOriginalNameStr:@"icon_ibar_ndex_click"];
     
     UINavigationController *nav3 = self.childViewControllers[2];
-    nav3.tabBarItem.title = @"页面4";
+    nav3.tabBarItem.title = @"关注";
     nav3.tabBarItem.image = [UIImage  imageNamed:@"icon_ibar_ndex_noclick"];
     nav3.tabBarItem.selectedImage = [UIImage
                                       imageOriginalNameStr:@"icon_ibar_ndex_click"];

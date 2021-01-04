@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GSSubTagCell : UITableViewCell
-
+@property (nonatomic ,strong) NSObject *model;
 @end
 
 NS_ASSUME_NONNULL_END

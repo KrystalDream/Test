@@ -19,7 +19,7 @@
 #import "FifthViewController.h"
 
 @interface HomeViewController ()<UIScrollViewDelegate>
-@property (nonatomic,weak) AFHTTPSessionManager *manager;
+@property (nonatomic,weak) AFHTTPSessionManager *manager; //因为是系统管理 所以用weak
 @property (nonatomic,strong) UIScrollView *scrView;
 
 @property (nonatomic,strong) UIView *titleBtnView;
