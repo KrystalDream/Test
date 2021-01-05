@@ -60,6 +60,8 @@
 		B23BD407256E31BF007CABA5 /* STPickerViewUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3FB256E31BF007CABA5 /* STPickerViewUI.m */; };
 		B24810FC259322C200737570 /* GSADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24810FB259322C200737570 /* GSADViewController.m */; };
 		B24811012593263500737570 /* GSADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24811002593263500737570 /* GSADViewController.xib */; };
+		B25CE84325A3F93100EEEF14 /* GSLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */; };
+		B25CE84825A3F95100EEEF14 /* GSLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */; };
 		B2C6740425A2F594004FEA32 /* FriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C6740325A2F594004FEA32 /* FriendTrendViewController.xib */; };
 		B2C6740B25A30617004FEA32 /* GSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C6740925A30617004FEA32 /* GSLoginRegisterViewController.m */; };
 		B2C6740C25A30617004FEA32 /* GSLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C6740A25A30617004FEA32 /* GSLoginRegisterViewController.xib */; };
@@ -186,6 +188,9 @@
 		B24810FA259322C200737570 /* GSADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSADViewController.h; sourceTree = "<group>"; };
 		B24810FB259322C200737570 /* GSADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSADViewController.m; sourceTree = "<group>"; };
 		B24811002593263500737570 /* GSADViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSADViewController.xib; sourceTree = "<group>"; };
+		B25CE84125A3F93100EEEF14 /* GSLoginRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLoginRegisterView.h; sourceTree = "<group>"; };
+		B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLoginRegisterView.m; sourceTree = "<group>"; };
+		B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSLoginRegisterView.xib; sourceTree = "<group>"; };
 		B2C6740325A2F594004FEA32 /* FriendTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTrendViewController.xib; sourceTree = "<group>"; };
 		B2C6740825A30617004FEA32 /* GSLoginRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLoginRegisterViewController.h; sourceTree = "<group>"; };
 		B2C6740925A30617004FEA32 /* GSLoginRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -510,6 +515,9 @@
 		4ED615AA24220C0B00BA8C34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B25CE84125A3F93100EEEF14 /* GSLoginRegisterView.h */,
+				B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */,
+				B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -836,6 +844,7 @@
 				B2C6740C25A30617004FEA32 /* GSLoginRegisterViewController.xib in Resources */,
 				4EF424D624C9C5510026DDFD /* car.plist in Resources */,
 				188562002421C60200CED3A0 /* LaunchScreen.storyboard in Resources */,
+				B25CE84825A3F95100EEEF14 /* GSLoginRegisterView.xib in Resources */,
 				B2C6740425A2F594004FEA32 /* FriendTrendViewController.xib in Resources */,
 				4E757359243C596400F34013 /* GSSubTagCell.xib in Resources */,
 				188561FD2421C60200CED3A0 /* Assets.xcassets in Resources */,
@@ -943,6 +952,7 @@
 				4ED9CF6F24230FF800E3ECC2 /* FriendTrendViewController.m in Sources */,
 				B23BD406256E31BF007CABA5 /* STPickerViewConst.m in Sources */,
 				B24810FC259322C200737570 /* GSADViewController.m in Sources */,
+				B25CE84325A3F93100EEEF14 /* GSLoginRegisterView.m in Sources */,
 				4EFC549A242B3B8E00860C63 /* GSSettingViewController.m in Sources */,
 				B23BD403256E31BF007CABA5 /* STPickerArea.m in Sources */,
 				4E679E2524FBEC86005D29AD /* NSString+Extension.m in Sources */,

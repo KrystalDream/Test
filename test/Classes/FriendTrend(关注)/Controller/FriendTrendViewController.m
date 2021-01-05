@@ -14,6 +14,7 @@
 @interface FriendTrendViewController ()
 @property (nonatomic ,strong) NSString *cookieId;
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
+@property (weak, nonatomic) IBOutlet UIButton *loginRegisterBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
 
 @end

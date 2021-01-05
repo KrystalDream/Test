@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSLoginRegisterViewController">
             <connections>
+                <outlet property="leadCons" destination="mu4-bY-eo8" id="hVc-yE-eKX"/>
+                <outlet property="middleView" destination="3vK-7g-hN2" id="Y5h-6M-eeH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,7 +43,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="xJ8-Ve-uWD"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" title="注册账号"/>
                             <state key="selected" title="已有账号？"/>
                             <connections>
@@ -61,7 +63,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vK-7g-hN2" userLabel="Middle">
-                    <rect key="frame" x="0.0" y="119" width="414" height="300"/>
+                    <rect key="frame" x="0.0" y="119" width="828" height="300"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="3wf-YW-1xZ"/>
@@ -80,7 +82,7 @@
             <constraints>
                 <constraint firstItem="PtS-mP-Ofw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="8f5-am-TM5"/>
                 <constraint firstAttribute="bottom" secondItem="PtS-mP-Ofw" secondAttribute="bottom" id="CmW-NB-z1U"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3vK-7g-hN2" secondAttribute="trailing" id="CqU-kP-4zW"/>
+                <constraint firstItem="3vK-7g-hN2" firstAttribute="width" secondItem="PtS-mP-Ofw" secondAttribute="width" multiplier="2" id="GJe-wk-PfG"/>
                 <constraint firstItem="LKU-4N-cXn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="IUl-Qm-pSL"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="LKU-4N-cXn" secondAttribute="bottom" constant="40" id="SVA-dr-HNx"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LKU-4N-cXn" secondAttribute="trailing" id="WG5-LA-Ba8"/>

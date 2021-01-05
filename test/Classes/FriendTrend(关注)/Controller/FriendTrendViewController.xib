@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendTrendViewController">
             <connections>
                 <outlet property="iconImageView" destination="Rcf-zC-rbb" id="EmP-Ag-cfk"/>
+                <outlet property="loginRegisterBtn" destination="H2B-zY-PXr" id="5E8-Kq-aaU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qDM-ec-OjA"/>
             </connections>
         </placeholder>
