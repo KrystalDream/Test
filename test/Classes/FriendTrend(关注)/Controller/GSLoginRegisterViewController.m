@@ -21,11 +21,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    /*
+     屏幕适配
+     
+     
+     
+     
+     */
     //封装自定义输入视图  添加到中间的view
     GSLoginRegisterView *loginView = [GSLoginRegisterView loginView];
     [self.middleView addSubview:loginView];
-    
+
     GSLoginRegisterView *registerView = [GSLoginRegisterView registerView];
     registerView.gs_x = self.middleView.gs_size.width *0.5;
     [self.middleView addSubview:registerView];
@@ -37,8 +43,8 @@
     sender.selected = !sender.selected;
     
     //平移中间的view
-    _leadCons.constant = -self.middleView.gs_size.width*0.5;
-    [UIView animateWithDuration:0.5 animations:^{
+    _leadCons.constant = _leadCons.constant == 0 ? -self.middleView.gs_size.width*0.5 : 0;
+    [UIView animateWithDuration:0.3 animations:^{
         [self.view layoutIfNeeded];
     }];
 }
