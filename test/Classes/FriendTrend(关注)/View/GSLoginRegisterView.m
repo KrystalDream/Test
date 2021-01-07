@@ -19,10 +19,10 @@
 //创建 xib  同名view ;   size：freeform    topBar : None
 //xib 中 imageview 不可以添加子控件  （解决方法：设置相同大小的view 在view 上添加）
 +(instancetype)loginView{
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil]lastObject];
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil]firstObject];
 }
 +(instancetype)registerView{
-    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil]firstObject];
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil]lastObject];
 
 }
 /*

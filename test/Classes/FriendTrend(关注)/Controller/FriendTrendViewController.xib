@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="iconImageView" destination="Rcf-zC-rbb" id="EmP-Ag-cfk"/>
                 <outlet property="loginRegisterBtn" destination="H2B-zY-PXr" id="5E8-Kq-aaU"/>
+                <outlet property="testField" destination="noT-IZ-zle" id="aSg-Cd-zsU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qDM-ec-OjA"/>
             </connections>
         </placeholder>
@@ -55,6 +56,12 @@
                         <action selector="loginBtnClick:" destination="-1" eventType="touchUpInside" id="k35-f8-aLi"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noT-IZ-zle">
+                    <rect key="frame" x="109" y="100" width="97" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fQ6-Mm-IDK"/>
             <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>

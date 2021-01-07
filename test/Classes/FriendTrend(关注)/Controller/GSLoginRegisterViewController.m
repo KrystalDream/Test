@@ -8,10 +8,12 @@
 
 #import "GSLoginRegisterViewController.h"
 #import "GSLoginRegisterView.h"
+#import "GSFastLoginView.h"
 
 @interface GSLoginRegisterViewController ()
 @property (weak, nonatomic) IBOutlet UIView *middleView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leadCons;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 @end
 
@@ -23,18 +25,34 @@
     // Do any additional setup after loading the view from its nib.
     /*
      屏幕适配
-     
-     
-     
-     
+     1、一个view 从xib 加载，需不需要再重新固定尺寸 一定要重新设置一下
+     2、在viewDidLoad 设置尺寸frame 好不好，开发一般子在viewDidLayoutSubviews 布局子控件
      */
+    
     //封装自定义输入视图  添加到中间的view
     GSLoginRegisterView *loginView = [GSLoginRegisterView loginView];
     [self.middleView addSubview:loginView];
 
     GSLoginRegisterView *registerView = [GSLoginRegisterView registerView];
-    registerView.gs_x = self.middleView.gs_size.width *0.5;
     [self.middleView addSubview:registerView];
+    
+    //添加快速登陆view
+    GSFastLoginView *fastView =[GSFastLoginView fastView];
+    [self.bottomView addSubview:fastView];
+}
+//viewDidLayoutSubviews:才会根据布局调整拉伸尺寸
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    GSLoginRegisterView *loginView = self.middleView.subviews[0];
+    loginView.frame = CGRectMake(0, 0,self.middleView.gs_width *0.5, self.middleView.gs_height);
+
+    
+    GSLoginRegisterView *registerView = self.middleView.subviews[1];
+    registerView.frame = CGRectMake(self.middleView.gs_width *0.5, 0,self.middleView.gs_width *0.5, self.middleView.gs_height);
+    
+    GSFastLoginView *fastView = self.bottomView.subviews.firstObject;
+    
+    fastView.frame = self.bottomView.bounds;
 }
 - (IBAction)closeClick:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];

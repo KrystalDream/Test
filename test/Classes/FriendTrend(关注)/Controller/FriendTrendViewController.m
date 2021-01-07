@@ -10,12 +10,14 @@
 #import "AFNetworking.h"
 #import "NetManager.h"
 #import "GSLoginRegisterViewController.h"
+#import "UITextField+PlaceHolder.h"
 
 @interface FriendTrendViewController ()
 @property (nonatomic ,strong) NSString *cookieId;
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
 @property (weak, nonatomic) IBOutlet UIButton *loginRegisterBtn;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageView;
+@property (weak, nonatomic) IBOutlet UITextField *testField;
 
 @end
 
@@ -33,6 +35,13 @@
 
     self.iconImageView.layer.cornerRadius = 50;
     self.iconImageView.layer.masksToBounds = YES;
+    
+    
+    //分析：为什么先设置占位文字颜色，就没有效果   ------> 占位文字的label 拿不到 （OC是懒加载机制 ：没设置占位文字，不会创建这个控件）
+    self.testField.placeHolderColor = [UIColor greenColor];
+
+    self.testField.placeholder = @"测试封装分类";
+
     
 }
 - (IBAction)loginBtnClick:(id)sender {

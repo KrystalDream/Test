@@ -18,18 +18,20 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbl-WL-Wgc">
                     <rect key="frame" x="74" y="20" width="266" height="92"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号 " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5b-xJ-eHP">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号 " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5b-xJ-eHP" customClass="GSLoginField">
                             <rect key="frame" x="5" y="0.0" width="256" height="46"/>
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Vs-0i-xa9">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Vs-0i-xa9" customClass="GSLoginField">
                             <rect key="frame" x="5" y="46" width="256" height="46"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.38925325869999999" blue="0.52158617969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="e5b-xJ-eHP" firstAttribute="top" secondItem="Kbl-WL-Wgc" secondAttribute="top" id="5Xe-VZ-GQY"/>
                         <constraint firstAttribute="bottom" secondItem="7Vs-0i-xa9" secondAttribute="bottom" id="8nH-24-1zX"/>
@@ -54,7 +56,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Kbl-WL-Wgc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="TsE-97-7bs"/>
                 <constraint firstItem="wqj-HO-Idm" firstAttribute="top" secondItem="Kbl-WL-Wgc" secondAttribute="bottom" constant="30" id="bEg-2Y-t4b"/>
@@ -75,18 +77,18 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8y-XU-xQ8">
                     <rect key="frame" x="74" y="20" width="266" height="92"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号 " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0s7-1T-8Ga">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号 " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0s7-1T-8Ga" customClass="GSLoginField">
                             <rect key="frame" x="5" y="0.0" width="256" height="46"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3us-v6-DBa">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3us-v6-DBa" customClass="GSLoginField">
                             <rect key="frame" x="5" y="46" width="256" height="46"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="266" id="1e9-j7-QTB"/>
                         <constraint firstAttribute="bottom" secondItem="3us-v6-DBa" secondAttribute="bottom" id="Daz-n6-H3N"/>
@@ -117,7 +119,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="LRy-WS-Myh"/>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="aet-UM-znf" firstAttribute="top" secondItem="OZJ-Hh-AT2" secondAttribute="bottom" constant="20" id="23d-rj-PNE"/>
                 <constraint firstItem="B8y-XU-xQ8" firstAttribute="centerX" secondItem="chq-zp-OjZ" secondAttribute="centerX" id="2yH-hX-J16"/>
