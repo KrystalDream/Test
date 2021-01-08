@@ -38,9 +38,12 @@
     
     
     //分析：为什么先设置占位文字颜色，就没有效果   ------> 占位文字的label 拿不到 （OC是懒加载机制 ：没设置占位文字，不会创建这个控件）
+    //解决  保存起来 runtime
     self.testField.placeHolderColor = [UIColor greenColor];
 
+    //设置占位文字：每次设置占位文字后，再拿到之前 占位文字保存的颜色 重新设置 
     self.testField.placeholder = @"测试封装分类";
+//    [self.testField setGSPlaceholder:@"测试封装分类"];
 
     
 }

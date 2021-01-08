@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITextField (PlaceHolder)
 @property UIColor *placeHolderColor;
+- (void)setGSPlaceholder:(NSString *)placeholder;
 @end
 
 NS_ASSUME_NONNULL_END

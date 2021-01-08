@@ -63,6 +63,8 @@
 		B23BD407256E31BF007CABA5 /* STPickerViewUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B23BD3FB256E31BF007CABA5 /* STPickerViewUI.m */; };
 		B24810FC259322C200737570 /* GSADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24810FB259322C200737570 /* GSADViewController.m */; };
 		B24811012593263500737570 /* GSADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24811002593263500737570 /* GSADViewController.xib */; };
+		B251AA1725A83CB600BB74F8 /* GSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */; };
+		B251AA1C25A8446400BB74F8 /* MeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B251AA1B25A8446400BB74F8 /* MeViewController.storyboard */; };
 		B25CE84325A3F93100EEEF14 /* GSLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */; };
 		B25CE84825A3F95100EEEF14 /* GSLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */; };
 		B28D6DAE25A6A4D100BECC1D /* GSLoginField.m in Sources */ = {isa = PBXBuildFile; fileRef = B28D6DAD25A6A4D100BECC1D /* GSLoginField.m */; };
@@ -198,6 +200,9 @@
 		B24810FA259322C200737570 /* GSADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSADViewController.h; sourceTree = "<group>"; };
 		B24810FB259322C200737570 /* GSADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSADViewController.m; sourceTree = "<group>"; };
 		B24811002593263500737570 /* GSADViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSADViewController.xib; sourceTree = "<group>"; };
+		B251AA1525A83CB600BB74F8 /* GSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSDetailViewController.h; sourceTree = "<group>"; };
+		B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSDetailViewController.m; sourceTree = "<group>"; };
+		B251AA1B25A8446400BB74F8 /* MeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeViewController.storyboard; sourceTree = "<group>"; };
 		B25CE84125A3F93100EEEF14 /* GSLoginRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLoginRegisterView.h; sourceTree = "<group>"; };
 		B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLoginRegisterView.m; sourceTree = "<group>"; };
 		B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSLoginRegisterView.xib; sourceTree = "<group>"; };
@@ -560,6 +565,9 @@
 			children = (
 				4ED9CF702423100B00E3ECC2 /* MeViewController.h */,
 				4ED9CF712423100B00E3ECC2 /* MeViewController.m */,
+				B251AA1B25A8446400BB74F8 /* MeViewController.storyboard */,
+				B251AA1525A83CB600BB74F8 /* GSDetailViewController.h */,
+				B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */,
 				4EBC6E1224455760005AEF17 /* GSWebViewController.h */,
 				4EBC6E1324455760005AEF17 /* GSWebViewController.m */,
 			);
@@ -875,6 +883,7 @@
 				188561FB2421C60100CED3A0 /* Main.storyboard in Resources */,
 				B24811012593263500737570 /* GSADViewController.xib in Resources */,
 				B23BD402256E31BF007CABA5 /* area.plist in Resources */,
+				B251AA1C25A8446400BB74F8 /* MeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,6 +970,7 @@
 				B23BD404256E31BF007CABA5 /* STPickerSingle.m in Sources */,
 				4ED9CF722423100B00E3ECC2 /* MeViewController.m in Sources */,
 				4E396E9024FC924F00C836DD /* NetManager.m in Sources */,
+				B251AA1725A83CB600BB74F8 /* GSDetailViewController.m in Sources */,
 				B234790C25A5587700D62865 /* GSFastLoginView.m in Sources */,
 				B234791725A5A29D00D62865 /* GSFastBtn.m in Sources */,
 				4ED615B324220C0B00BA8C34 /* main.m in Sources */,
