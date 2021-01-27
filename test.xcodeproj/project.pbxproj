@@ -64,7 +64,6 @@
 		B24810FC259322C200737570 /* GSADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24810FB259322C200737570 /* GSADViewController.m */; };
 		B24811012593263500737570 /* GSADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24811002593263500737570 /* GSADViewController.xib */; };
 		B251AA1725A83CB600BB74F8 /* GSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */; };
-		B251AA1C25A8446400BB74F8 /* MeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B251AA1B25A8446400BB74F8 /* MeViewController.storyboard */; };
 		B25CE84325A3F93100EEEF14 /* GSLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */; };
 		B25CE84825A3F95100EEEF14 /* GSLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */; };
 		B28D6DAE25A6A4D100BECC1D /* GSLoginField.m in Sources */ = {isa = PBXBuildFile; fileRef = B28D6DAD25A6A4D100BECC1D /* GSLoginField.m */; };
@@ -73,6 +72,7 @@
 		B2C6740B25A30617004FEA32 /* GSLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C6740925A30617004FEA32 /* GSLoginRegisterViewController.m */; };
 		B2C6740C25A30617004FEA32 /* GSLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C6740A25A30617004FEA32 /* GSLoginRegisterViewController.xib */; };
 		B2E952C6256F7D1F00420B95 /* PrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E952C5256F7D1F00420B95 /* PrivacyViewController.m */; };
+		B2FFAAB325AC24E60054EC9B /* StoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FFAAB225AC24E60054EC9B /* StoryViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,7 +202,6 @@
 		B24811002593263500737570 /* GSADViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSADViewController.xib; sourceTree = "<group>"; };
 		B251AA1525A83CB600BB74F8 /* GSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSDetailViewController.h; sourceTree = "<group>"; };
 		B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSDetailViewController.m; sourceTree = "<group>"; };
-		B251AA1B25A8446400BB74F8 /* MeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeViewController.storyboard; sourceTree = "<group>"; };
 		B25CE84125A3F93100EEEF14 /* GSLoginRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLoginRegisterView.h; sourceTree = "<group>"; };
 		B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLoginRegisterView.m; sourceTree = "<group>"; };
 		B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSLoginRegisterView.xib; sourceTree = "<group>"; };
@@ -216,6 +215,7 @@
 		B2C6740A25A30617004FEA32 /* GSLoginRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		B2E952C4256F7D1F00420B95 /* PrivacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyViewController.h; sourceTree = "<group>"; };
 		B2E952C5256F7D1F00420B95 /* PrivacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyViewController.m; sourceTree = "<group>"; };
+		B2FFAAB225AC24E60054EC9B /* StoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +417,7 @@
 			children = (
 				4ED615B52422196900BA8C34 /* HomeViewController.h */,
 				4ED615B62422196900BA8C34 /* HomeViewController.m */,
+				B2FFAAB225AC24E60054EC9B /* StoryViewController.storyboard */,
 				4EA77BA224665CCB00DA9370 /* AllViewController.h */,
 				4EA77BA324665CCB00DA9370 /* AllViewController.m */,
 				4EA77BA524665CE200DA9370 /* SecondViewController.h */,
@@ -565,7 +566,6 @@
 			children = (
 				4ED9CF702423100B00E3ECC2 /* MeViewController.h */,
 				4ED9CF712423100B00E3ECC2 /* MeViewController.m */,
-				B251AA1B25A8446400BB74F8 /* MeViewController.storyboard */,
 				B251AA1525A83CB600BB74F8 /* GSDetailViewController.h */,
 				B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */,
 				4EBC6E1224455760005AEF17 /* GSWebViewController.h */,
@@ -873,6 +873,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C6740C25A30617004FEA32 /* GSLoginRegisterViewController.xib in Resources */,
+				B2FFAAB325AC24E60054EC9B /* StoryViewController.storyboard in Resources */,
 				4EF424D624C9C5510026DDFD /* car.plist in Resources */,
 				188562002421C60200CED3A0 /* LaunchScreen.storyboard in Resources */,
 				B25CE84825A3F95100EEEF14 /* GSLoginRegisterView.xib in Resources */,
@@ -883,7 +884,6 @@
 				188561FB2421C60100CED3A0 /* Main.storyboard in Resources */,
 				B24811012593263500737570 /* GSADViewController.xib in Resources */,
 				B23BD402256E31BF007CABA5 /* area.plist in Resources */,
-				B251AA1C25A8446400BB74F8 /* MeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1169,7 +1169,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Meng Shao (YGJG9XV42F)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y24FFVWLYR;
 				GCC_PREFIX_HEADER = test/Classes/Other/test.pch;
@@ -1181,7 +1181,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.chinabondtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = com.chinabondtest.development;
+				PROVISIONING_PROFILE_SPECIFIER = chinabondtest.development;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1192,7 +1192,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Jieshuibao Technology Co., Ltd. (Y24FFVWLYR)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = Y24FFVWLYR;
 				GCC_PREFIX_HEADER = test/Classes/Other/test.pch;
@@ -1204,7 +1204,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.chinabondtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = com.chinabondtest.distribution;
+				PROVISIONING_PROFILE_SPECIFIER = chinabondtestNewAdhoc;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

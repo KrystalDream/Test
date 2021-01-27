@@ -251,6 +251,8 @@
 
 - (void)game{
     GSFunc;
+    
+    
 }
 #pragma mark scrollerViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
