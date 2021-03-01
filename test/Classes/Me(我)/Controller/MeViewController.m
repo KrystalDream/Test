@@ -9,6 +9,7 @@
 #import "MeViewController.h"
 #import "GSSettingViewController.h"
 #import "GSWebViewController.h"
+#import "GSMineDetailViewController.h"
 @interface MeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIImageView *topImageView;
@@ -142,5 +143,10 @@ NSLog(@"-imgCGRect-------%@",NSStringFromCGRect(self.topImageView.frame));
     }
     cell.textLabel.text = [NSString stringWithFormat:@"bill: %ld",(long)indexPath.row];
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    GSMineDetailViewController *vc = [GSMineDetailViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

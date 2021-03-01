@@ -49,6 +49,17 @@
 		4EFC5493242B338E00860C63 /* GSNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC5492242B338E00860C63 /* GSNavigationViewController.m */; };
 		4EFC549A242B3B8E00860C63 /* GSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFC5499242B3B8E00860C63 /* GSSettingViewController.m */; };
 		B2129B6C259971BA0066B0F7 /* GSADModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2129B6B259971BA0066B0F7 /* GSADModel.m */; };
+		B2341CA025ECC98500EB246D /* XJKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2341C9125ECC98500EB246D /* XJKeyboardView.m */; };
+		B2341CA125ECC98500EB246D /* NSString+XJRandomLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2341C9225ECC98500EB246D /* NSString+XJRandomLetter.m */; };
+		B2341CA225ECC98500EB246D /* XJKeyboardAccessoryBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B2341C9325ECC98500EB246D /* XJKeyboardAccessoryBtn.m */; };
+		B2341CA325ECC98500EB246D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2341C9525ECC98500EB246D /* UIView+Extension.m */; };
+		B2341CA425ECC98500EB246D /* c_chaKeyboardButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = B2341C9825ECC98500EB246D /* c_chaKeyboardButtonSel.png */; };
+		B2341CA525ECC98500EB246D /* c_symbolKeyboardButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2341C9925ECC98500EB246D /* c_symbolKeyboardButtonSel@2x.png */; };
+		B2341CA625ECC98500EB246D /* formitem@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2341C9A25ECC98500EB246D /* formitem@3x.png */; };
+		B2341CA725ECC98500EB246D /* keyboard_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2341C9B25ECC98500EB246D /* keyboard_large@2x.png */; };
+		B2341CA825ECC98500EB246D /* keyboard_little@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2341C9C25ECC98500EB246D /* keyboard_little@2x.png */; };
+		B2341CA925ECC98500EB246D /* keyboard_backspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2341C9D25ECC98500EB246D /* keyboard_backspace@2x.png */; };
+		B2341CAA25ECC98500EB246D /* XJSafeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B2341C9E25ECC98500EB246D /* XJSafeTextField.m */; };
 		B234790C25A5587700D62865 /* GSFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B234790B25A5587700D62865 /* GSFastLoginView.m */; };
 		B234791125A5589000D62865 /* GSFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B234791025A5589000D62865 /* GSFastLoginView.xib */; };
 		B234791725A5A29D00D62865 /* GSFastBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B234791625A5A29D00D62865 /* GSFastBtn.m */; };
@@ -66,6 +77,8 @@
 		B251AA1725A83CB600BB74F8 /* GSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */; };
 		B25CE84325A3F93100EEEF14 /* GSLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */; };
 		B25CE84825A3F95100EEEF14 /* GSLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */; };
+		B282BACE25E0A8DC00424ECA /* GSMineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B282BACC25E0A8DC00424ECA /* GSMineDetailViewController.m */; };
+		B282BACF25E0A8DC00424ECA /* GSMineDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B282BACD25E0A8DC00424ECA /* GSMineDetailViewController.xib */; };
 		B28D6DAE25A6A4D100BECC1D /* GSLoginField.m in Sources */ = {isa = PBXBuildFile; fileRef = B28D6DAD25A6A4D100BECC1D /* GSLoginField.m */; };
 		B28D6DBD25A6ED7200BECC1D /* UITextField+PlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = B28D6DBC25A6ED7200BECC1D /* UITextField+PlaceHolder.m */; };
 		B2C6740425A2F594004FEA32 /* FriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C6740325A2F594004FEA32 /* FriendTrendViewController.xib */; };
@@ -174,6 +187,22 @@
 		9A9E1ED31EF128D64EC49F96 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		B2129B6A259971BA0066B0F7 /* GSADModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSADModel.h; sourceTree = "<group>"; };
 		B2129B6B259971BA0066B0F7 /* GSADModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSADModel.m; sourceTree = "<group>"; };
+		B2341C8F25ECC98500EB246D /* XJKeyboardAccessoryBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJKeyboardAccessoryBtn.h; sourceTree = "<group>"; };
+		B2341C9025ECC98500EB246D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		B2341C9125ECC98500EB246D /* XJKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJKeyboardView.m; sourceTree = "<group>"; };
+		B2341C9225ECC98500EB246D /* NSString+XJRandomLetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XJRandomLetter.m"; sourceTree = "<group>"; };
+		B2341C9325ECC98500EB246D /* XJKeyboardAccessoryBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJKeyboardAccessoryBtn.m; sourceTree = "<group>"; };
+		B2341C9425ECC98500EB246D /* XJKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJKeyboardView.h; sourceTree = "<group>"; };
+		B2341C9525ECC98500EB246D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		B2341C9625ECC98500EB246D /* NSString+XJRandomLetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XJRandomLetter.h"; sourceTree = "<group>"; };
+		B2341C9825ECC98500EB246D /* c_chaKeyboardButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c_chaKeyboardButtonSel.png; sourceTree = "<group>"; };
+		B2341C9925ECC98500EB246D /* c_symbolKeyboardButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c_symbolKeyboardButtonSel@2x.png"; sourceTree = "<group>"; };
+		B2341C9A25ECC98500EB246D /* formitem@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "formitem@3x.png"; sourceTree = "<group>"; };
+		B2341C9B25ECC98500EB246D /* keyboard_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_large@2x.png"; sourceTree = "<group>"; };
+		B2341C9C25ECC98500EB246D /* keyboard_little@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_little@2x.png"; sourceTree = "<group>"; };
+		B2341C9D25ECC98500EB246D /* keyboard_backspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_backspace@2x.png"; sourceTree = "<group>"; };
+		B2341C9E25ECC98500EB246D /* XJSafeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJSafeTextField.m; sourceTree = "<group>"; };
+		B2341C9F25ECC98500EB246D /* XJSafeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJSafeTextField.h; sourceTree = "<group>"; };
 		B234790A25A5587700D62865 /* GSFastLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSFastLoginView.h; sourceTree = "<group>"; };
 		B234790B25A5587700D62865 /* GSFastLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSFastLoginView.m; sourceTree = "<group>"; };
 		B234791025A5589000D62865 /* GSFastLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSFastLoginView.xib; sourceTree = "<group>"; };
@@ -205,6 +234,9 @@
 		B25CE84125A3F93100EEEF14 /* GSLoginRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLoginRegisterView.h; sourceTree = "<group>"; };
 		B25CE84225A3F93100EEEF14 /* GSLoginRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLoginRegisterView.m; sourceTree = "<group>"; };
 		B25CE84725A3F95100EEEF14 /* GSLoginRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSLoginRegisterView.xib; sourceTree = "<group>"; };
+		B282BACB25E0A8DC00424ECA /* GSMineDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSMineDetailViewController.h; sourceTree = "<group>"; };
+		B282BACC25E0A8DC00424ECA /* GSMineDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSMineDetailViewController.m; sourceTree = "<group>"; };
+		B282BACD25E0A8DC00424ECA /* GSMineDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSMineDetailViewController.xib; sourceTree = "<group>"; };
 		B28D6DAC25A6A4D100BECC1D /* GSLoginField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSLoginField.h; sourceTree = "<group>"; };
 		B28D6DAD25A6A4D100BECC1D /* GSLoginField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSLoginField.m; sourceTree = "<group>"; };
 		B28D6DBB25A6ED7200BECC1D /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
@@ -332,6 +364,7 @@
 		4E11CE40244FEB18009CFA1C /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B2341C8D25ECC98500EB246D /* XJSafeKeyboard */,
 				B23BD3E7256E31BF007CABA5 /* DateSelect */,
 				4E396E8E24FC924F00C836DD /* NetManager.h */,
 				4E396E8F24FC924F00C836DD /* NetManager.m */,
@@ -570,6 +603,9 @@
 				B251AA1625A83CB600BB74F8 /* GSDetailViewController.m */,
 				4EBC6E1224455760005AEF17 /* GSWebViewController.h */,
 				4EBC6E1324455760005AEF17 /* GSWebViewController.m */,
+				B282BACB25E0A8DC00424ECA /* GSMineDetailViewController.h */,
+				B282BACC25E0A8DC00424ECA /* GSMineDetailViewController.m */,
+				B282BACD25E0A8DC00424ECA /* GSMineDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -700,6 +736,45 @@
 				2697B7C641FD5DB796A8F089 /* Pods-test.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2341C8D25ECC98500EB246D /* XJSafeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B2341C8E25ECC98500EB246D /* SafeKeyboardView */,
+				B2341C9725ECC98500EB246D /* Images */,
+				B2341C9F25ECC98500EB246D /* XJSafeTextField.h */,
+				B2341C9E25ECC98500EB246D /* XJSafeTextField.m */,
+			);
+			path = XJSafeKeyboard;
+			sourceTree = "<group>";
+		};
+		B2341C8E25ECC98500EB246D /* SafeKeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				B2341C8F25ECC98500EB246D /* XJKeyboardAccessoryBtn.h */,
+				B2341C9025ECC98500EB246D /* UIView+Extension.h */,
+				B2341C9125ECC98500EB246D /* XJKeyboardView.m */,
+				B2341C9225ECC98500EB246D /* NSString+XJRandomLetter.m */,
+				B2341C9325ECC98500EB246D /* XJKeyboardAccessoryBtn.m */,
+				B2341C9425ECC98500EB246D /* XJKeyboardView.h */,
+				B2341C9525ECC98500EB246D /* UIView+Extension.m */,
+				B2341C9625ECC98500EB246D /* NSString+XJRandomLetter.h */,
+			);
+			path = SafeKeyboardView;
+			sourceTree = "<group>";
+		};
+		B2341C9725ECC98500EB246D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B2341C9825ECC98500EB246D /* c_chaKeyboardButtonSel.png */,
+				B2341C9925ECC98500EB246D /* c_symbolKeyboardButtonSel@2x.png */,
+				B2341C9A25ECC98500EB246D /* formitem@3x.png */,
+				B2341C9B25ECC98500EB246D /* keyboard_large@2x.png */,
+				B2341C9C25ECC98500EB246D /* keyboard_little@2x.png */,
+				B2341C9D25ECC98500EB246D /* keyboard_backspace@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		B23BD3E7256E31BF007CABA5 /* DateSelect */ = {
@@ -872,16 +947,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2341CA625ECC98500EB246D /* formitem@3x.png in Resources */,
 				B2C6740C25A30617004FEA32 /* GSLoginRegisterViewController.xib in Resources */,
+				B282BACF25E0A8DC00424ECA /* GSMineDetailViewController.xib in Resources */,
+				B2341CA525ECC98500EB246D /* c_symbolKeyboardButtonSel@2x.png in Resources */,
 				B2FFAAB325AC24E60054EC9B /* StoryViewController.storyboard in Resources */,
 				4EF424D624C9C5510026DDFD /* car.plist in Resources */,
+				B2341CA425ECC98500EB246D /* c_chaKeyboardButtonSel.png in Resources */,
 				188562002421C60200CED3A0 /* LaunchScreen.storyboard in Resources */,
+				B2341CA925ECC98500EB246D /* keyboard_backspace@2x.png in Resources */,
 				B25CE84825A3F95100EEEF14 /* GSLoginRegisterView.xib in Resources */,
 				B234791125A5589000D62865 /* GSFastLoginView.xib in Resources */,
+				B2341CA725ECC98500EB246D /* keyboard_large@2x.png in Resources */,
 				B2C6740425A2F594004FEA32 /* FriendTrendViewController.xib in Resources */,
 				4E757359243C596400F34013 /* GSSubTagCell.xib in Resources */,
 				188561FD2421C60200CED3A0 /* Assets.xcassets in Resources */,
 				188561FB2421C60100CED3A0 /* Main.storyboard in Resources */,
+				B2341CA825ECC98500EB246D /* keyboard_little@2x.png in Resources */,
 				B24811012593263500737570 /* GSADViewController.xib in Resources */,
 				B23BD402256E31BF007CABA5 /* area.plist in Resources */,
 			);
@@ -952,8 +1034,11 @@
 			files = (
 				B28D6DAE25A6A4D100BECC1D /* GSLoginField.m in Sources */,
 				4EA77BB024665D3300DA9370 /* FifthViewController.m in Sources */,
+				B2341CA125ECC98500EB246D /* NSString+XJRandomLetter.m in Sources */,
 				4ED615B72422196900BA8C34 /* HomeViewController.m in Sources */,
+				B2341CA025ECC98500EB246D /* XJKeyboardView.m in Sources */,
 				4ED63B852429F98C001E75C5 /* UIBarButtonItem+Item.m in Sources */,
+				B282BACE25E0A8DC00424ECA /* GSMineDetailViewController.m in Sources */,
 				4E8D5B072469556E0069143B /* GSConst.m in Sources */,
 				4E757358243C596400F34013 /* GSSubTagCell.m in Sources */,
 				4EA77BA724665CE200DA9370 /* SecondViewController.m in Sources */,
@@ -965,6 +1050,7 @@
 				4ED615B424220C0B00BA8C34 /* AppDelegate.m in Sources */,
 				4E0EAE192424936D00A87587 /* UIImage+Image.m in Sources */,
 				B23BD3FF256E31BF007CABA5 /* STPickerDate.m in Sources */,
+				B2341CA325ECC98500EB246D /* UIView+Extension.m in Sources */,
 				4E64AFDD24370F9D00EDD962 /* EssenceItemModel.m in Sources */,
 				B2E952C6256F7D1F00420B95 /* PrivacyViewController.m in Sources */,
 				B23BD404256E31BF007CABA5 /* STPickerSingle.m in Sources */,
@@ -974,6 +1060,7 @@
 				B234790C25A5587700D62865 /* GSFastLoginView.m in Sources */,
 				B234791725A5A29D00D62865 /* GSFastBtn.m in Sources */,
 				4ED615B324220C0B00BA8C34 /* main.m in Sources */,
+				B2341CAA25ECC98500EB246D /* XJSafeTextField.m in Sources */,
 				4ED9CF6C24230FD700E3ECC2 /* PublishViewController.m in Sources */,
 				4E863A8B24D798570002A45E /* UIImage+Extension.m in Sources */,
 				B28D6DBD25A6ED7200BECC1D /* UITextField+PlaceHolder.m in Sources */,
@@ -996,6 +1083,7 @@
 				4E679E2524FBEC86005D29AD /* NSString+Extension.m in Sources */,
 				4ED9CF6924230FC300E3ECC2 /* NewViewController.m in Sources */,
 				4EA77BA424665CCB00DA9370 /* AllViewController.m in Sources */,
+				B2341CA225ECC98500EB246D /* XJKeyboardAccessoryBtn.m in Sources */,
 				4ED63B802429AB0D001E75C5 /* UIView+Frame.m in Sources */,
 				4EF424DC24C9C5A00026DDFD /* CarModel.m in Sources */,
 				B23BD401256E31BF007CABA5 /* STPickerView.m in Sources */,
@@ -1169,9 +1257,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Meng Shao (YGJG9XV42F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 梦 邵 (CDC4CFFN2V)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Y24FFVWLYR;
+				DEVELOPMENT_TEAM = EQ6YY87US2;
 				GCC_PREFIX_HEADER = test/Classes/Other/test.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1179,9 +1267,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.chinabondtest;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.chinabond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = chinabondtest.development;
+				PROVISIONING_PROFILE_SPECIFIER = cn.com.chinabond.development;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1192,9 +1280,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Jieshuibao Technology Co., Ltd. (Y24FFVWLYR)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: China Central Depository & Clearing Co., Ltd. (EQ6YY87US2)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = Y24FFVWLYR;
+				DEVELOPMENT_TEAM = EQ6YY87US2;
 				GCC_PREFIX_HEADER = test/Classes/Other/test.pch;
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1202,9 +1290,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.com.chinabondtest;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.chinabond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = chinabondtestNewAdhoc;
+				PROVISIONING_PROFILE_SPECIFIER = cn.com.chinabond.AdHoc;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -95,7 +95,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 5;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -126,7 +126,9 @@
         case 4:
             cell.textLabel.text = @"协议点击";
             break;
-            
+        case 5:
+            cell.textLabel.text = @"storyBoard";
+            break;
         default:
             break;
     }
@@ -172,7 +174,13 @@
         }
             break;
 
+        case 5:{
             
+            PrivacyViewController *vc = [PrivacyViewController new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+
         default:
             break;
     }
